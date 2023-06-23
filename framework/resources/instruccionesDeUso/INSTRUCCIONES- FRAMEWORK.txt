@@ -1,0 +1,37 @@
+Instrucciones para poder usar el framework:
+
+1ro:
+
+Debe crear clases que implemententen la interfaz "Accion"
+y completar los metodos:
+void ejecutar();
+String nombreAccion();
+String descripcionAccion();
+
+2do:
+
+Debe crear una clase main e instanciar la clase "Framework"
+
+de la siguiente manera:
+
+Framework (nombre de la instancia) = new Framework(archivo de properties o json);
+
+
+3ro:
+
+Definir un archivo de texto que contenga lo siguiente:
+
+para acciones comunes:
+- el nombre del archivo debe ser [nombre]. propeties
+- adentro debe tener detallado: acciones: {paquete}.AccionUno; {paquete}.AccionDos
+	IMPORTANTE!!
+	cada clase debe estar separada con punto y coma seguida de un espacio como se muestra a continuacion "; "
+
+para acciones json:
+- el nombre del archivo debe ser [nombre.json]
+- adentro debe estar detallado lo siguiente: 
+	{
+ 	   "acciones": ["{paquete}.AccionUno", "{paquete}.AccionUno", "{paquete}.AccionXXX"],
+ 	   "max-threads": N
+	}
+donde "max-threads" es el numero de acciones concurrentes que se deben ejecutar al mismo tiempo

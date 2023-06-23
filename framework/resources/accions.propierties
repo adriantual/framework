@@ -1,0 +1,2 @@
+accions: antual.utilizacion.AccionUno; antual.utilizacion.AccionDos; antual.utilizacion.AccionTres; antual.utilizacion.AccionCuatro; antual.utilizacion.AccionCinco; 
+"max-threads": 2;
